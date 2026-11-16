@@ -1,0 +1,38 @@
+name: Spell data problem
+description: A spell has an incorrect description, traits, tags, rating or source, or is missing
+title: "[Data] "
+labels: ["data"]
+body:
+  - type: input
+    id: spell
+    attributes:
+      label: Spell name
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What's wrong?
+      multiple: true
+      options:
+        - Incorrect spell description/traits
+        - Incorrect category or condition tags
+        - Incorrect rating or reason for rating
+        - Incorrect Granted by, Requires or Modified by entry
+        - Incorrect or missing Archives of Nethys link
+        - Spell Missing
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What does the app show, and what should it be?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: An Archives of Nethys link or book and page, if you have one.

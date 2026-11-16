@@ -1,0 +1,24 @@
+name: Suggestion
+description: An idea for a new feature or an improvement
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?
+      description: When would you use it at the table or while building a character?
+  - type: dropdown
+    id: role
+    attributes:
+      label: I mostly play as a…
+      options:
+        - Player
+        - GM
+        - Both
