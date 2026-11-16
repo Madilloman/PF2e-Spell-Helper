@@ -49,8 +49,6 @@ The whole app is a single self-contained page (`index.html`) that runs in the br
 
 Spell data is a snapshot as of 11/16/2026 from the open-source [Foundry VTT PF2e System](https://github.com/foundryvtt/pf2e). Categories, conditions and sources are assigned by text matching with some manual corrections, so there may be edge cases where they do not align with the spell; check the [Archives of Nethys](https://2e.aonprd.com/) link to confirm spell details. Ratings are opinions, not official rules.
 
-The `build/` folder holds the scripts that turn the Foundry data into `index.html`. See [CLAUDE.md](CLAUDE.md) for how an update is built and published.
-
 ## Legal
 
 See [NOTICE.md](NOTICE.md).
